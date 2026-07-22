@@ -47,5 +47,34 @@ public class VerbsController : ControllerBase
             verb
         );
     }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateVerb(int id, Verb verb)
+    {
+        if (id != verb.Id)
+            return BadRequest();
+
+        var exists = await _context.Verbs.AnyAsync(v => v.Id == id);
+        if (!exists)
+            return NotFound();
+
+        _context.Entry(verb).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteVerb(int id)
+    {
+        var verb = await _context.Verbs.FindAsync(id);
+        if (verb == null)
+            return NotFound();
+
+        _context.Verbs.Remove(verb);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
     
 }
