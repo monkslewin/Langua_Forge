@@ -6,9 +6,7 @@ using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-
 namespace LanguaForge.API.Controllers;
-
 
 [ApiController]
 [Route("api/auth")]
@@ -17,7 +15,6 @@ public class AuthController : ControllerBase
 
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly IConfiguration _configuration;
-
 
     public AuthController(
         UserManager<ApplicationUser> userManager,
@@ -28,9 +25,6 @@ public class AuthController : ControllerBase
         _configuration = configuration;
     }
 
-
-
-    // POST: api/auth/register
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
@@ -45,7 +39,6 @@ public class AuthController : ControllerBase
             });
         }
 
-
         var user = new ApplicationUser
         {
             UserName = request.Email,
@@ -53,7 +46,6 @@ public class AuthController : ControllerBase
             FirstName = request.FirstName,
             LastName = request.LastName
         };
-
 
         var result = await _userManager.CreateAsync(
             user,
@@ -74,10 +66,6 @@ public class AuthController : ControllerBase
 
     }
 
-
-
-
-    // POST: api/auth/login
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
@@ -85,7 +73,6 @@ public class AuthController : ControllerBase
         var user = await _userManager.FindByEmailAsync(
             request.Email
         );
-
 
         if(user == null)
         {
@@ -95,13 +82,11 @@ public class AuthController : ControllerBase
             });
         }
 
-
         var passwordCorrect =
             await _userManager.CheckPasswordAsync(
                 user,
                 request.Password
             );
-
 
         if(!passwordCorrect)
         {
@@ -111,10 +96,7 @@ public class AuthController : ControllerBase
             });
         }
 
-
-
         var token = CreateToken(user);
-
 
         return Ok(new
         {
@@ -133,10 +115,6 @@ public class AuthController : ControllerBase
 
     }
 
-
-
-
-
     private string CreateToken(ApplicationUser user)
     {
 
@@ -148,18 +126,15 @@ public class AuthController : ControllerBase
                 user.Id
             ),
 
-
             new Claim(
                 JwtRegisteredClaimNames.Email,
                 user.Email!
             ),
 
-
             new Claim(
                 "firstName",
                 user.FirstName
             ),
-
 
             new Claim(
                 "lastName",
@@ -168,22 +143,16 @@ public class AuthController : ControllerBase
 
         };
 
-
-
         var key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(
                 _configuration["Jwt:Key"]!
             )
         );
 
-
-
         var credentials = new SigningCredentials(
             key,
             SecurityAlgorithms.HmacSha256
         );
-
-
 
         var token = new JwtSecurityToken(
 
@@ -194,20 +163,15 @@ public class AuthController : ControllerBase
             audience:
                 _configuration["Jwt:Audience"],
 
-
             claims: claims,
-
 
             expires:
                 DateTime.UtcNow.AddHours(1),
-
 
             signingCredentials:
                 credentials
 
         );
-
-
 
         return new JwtSecurityTokenHandler()
             .WriteToken(token);
