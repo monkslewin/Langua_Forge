@@ -6,5 +6,13 @@ public class Verb
 
     public string Infinitive { get; set; } = "";
 
-    public string Meaning { get; set; } = "";
+    public string English { get; set; } = "";
+
+    public string Group { get; set; } = "";
+
+    public bool IsIrregular { get; set; }
+
+    public bool IsReflexive { get; set; }
+
+    public int FrequencyRank { get; set; }
 }
