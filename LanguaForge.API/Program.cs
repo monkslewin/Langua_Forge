@@ -1,12 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using LanguaForge.API.Data;
+using LanguaForge.API.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-// ================================
-// DATABASE
-// ================================
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(
@@ -15,38 +14,19 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 );
 
 
-// ================================
-// CONTROLLERS
-// ================================
+builder.Services
+    .AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
 
 builder.Services.AddControllers();
-
-
-// ================================
-// OPENAPI / SWAGGER
-// ================================
 
 builder.Services.AddOpenApi();
 
 
 var app = builder.Build();
 
-
-// ================================
-// DATABASE SEEDING
-// ================================
-
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-
-    DbSeeder.SeedAsync(db).Wait();
-}
-
-
-// ================================
-// HTTP PIPELINE
-// ================================
 
 if (app.Environment.IsDevelopment())
 {
@@ -56,10 +36,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 
-// ================================
-// MAP API CONTROLLERS
-// ================================
+app.UseAuthorization();
+
 
 app.MapControllers();
 
