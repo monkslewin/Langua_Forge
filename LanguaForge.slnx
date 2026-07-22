@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LanguaForge.API/LanguaForge.API.csproj" />
+  <Project Path="LanguaForge.Web/LanguaForge.Web.csproj" />
+</Solution>
