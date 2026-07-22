@@ -1,0 +1,2702 @@
+[
+  {
+    "Id": 1,
+    "Infinitive": "être",
+    "English": "to be",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 1
+  },
+  {
+    "Id": 2,
+    "Infinitive": "avoir",
+    "English": "to have",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 2
+  },
+  {
+    "Id": 3,
+    "Infinitive": "faire",
+    "English": "to do / to make",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 3
+  },
+  {
+    "Id": 4,
+    "Infinitive": "aller",
+    "English": "to go",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 4
+  },
+  {
+    "Id": 5,
+    "Infinitive": "pouvoir",
+    "English": "to be able to / can",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 5
+  },
+  {
+    "Id": 6,
+    "Infinitive": "vouloir",
+    "English": "to want",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 6
+  },
+  {
+    "Id": 7,
+    "Infinitive": "devoir",
+    "English": "to have to / must",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 7
+  },
+  {
+    "Id": 8,
+    "Infinitive": "savoir",
+    "English": "to know (a fact)",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 8
+  },
+  {
+    "Id": 9,
+    "Infinitive": "falloir",
+    "English": "to be necessary",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 9
+  },
+  {
+    "Id": 10,
+    "Infinitive": "valoir",
+    "English": "to be worth",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 10
+  },
+  {
+    "Id": 11,
+    "Infinitive": "dire",
+    "English": "to say / to tell",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 11
+  },
+  {
+    "Id": 12,
+    "Infinitive": "voir",
+    "English": "to see",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 12
+  },
+  {
+    "Id": 13,
+    "Infinitive": "croire",
+    "English": "to believe",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 13
+  },
+  {
+    "Id": 14,
+    "Infinitive": "connaître",
+    "English": "to know (be familiar with)",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 14
+  },
+  {
+    "Id": 15,
+    "Infinitive": "reconnaître",
+    "English": "to recognize",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 15
+  },
+  {
+    "Id": 16,
+    "Infinitive": "paraître",
+    "English": "to appear / to seem",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 16
+  },
+  {
+    "Id": 17,
+    "Infinitive": "apparaître",
+    "English": "to appear",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 17
+  },
+  {
+    "Id": 18,
+    "Infinitive": "disparaître",
+    "English": "to disappear",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 18
+  },
+  {
+    "Id": 19,
+    "Infinitive": "naître",
+    "English": "to be born",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 19
+  },
+  {
+    "Id": 20,
+    "Infinitive": "plaire",
+    "English": "to please",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 20
+  },
+  {
+    "Id": 21,
+    "Infinitive": "venir",
+    "English": "to come",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 21
+  },
+  {
+    "Id": 22,
+    "Infinitive": "devenir",
+    "English": "to become",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 22
+  },
+  {
+    "Id": 23,
+    "Infinitive": "revenir",
+    "English": "to come back",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 23
+  },
+  {
+    "Id": 24,
+    "Infinitive": "tenir",
+    "English": "to hold",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 24
+  },
+  {
+    "Id": 25,
+    "Infinitive": "obtenir",
+    "English": "to obtain",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 25
+  },
+  {
+    "Id": 26,
+    "Infinitive": "maintenir",
+    "English": "to maintain",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 26
+  },
+  {
+    "Id": 27,
+    "Infinitive": "retenir",
+    "English": "to retain / to hold back",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 27
+  },
+  {
+    "Id": 28,
+    "Infinitive": "appartenir",
+    "English": "to belong",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 28
+  },
+  {
+    "Id": 29,
+    "Infinitive": "soutenir",
+    "English": "to support",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 29
+  },
+  {
+    "Id": 30,
+    "Infinitive": "entretenir",
+    "English": "to maintain / to upkeep",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 30
+  },
+  {
+    "Id": 31,
+    "Infinitive": "prendre",
+    "English": "to take",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 31
+  },
+  {
+    "Id": 32,
+    "Infinitive": "apprendre",
+    "English": "to learn",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 32
+  },
+  {
+    "Id": 33,
+    "Infinitive": "comprendre",
+    "English": "to understand",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 33
+  },
+  {
+    "Id": 34,
+    "Infinitive": "surprendre",
+    "English": "to surprise",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 34
+  },
+  {
+    "Id": 35,
+    "Infinitive": "entreprendre",
+    "English": "to undertake",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 35
+  },
+  {
+    "Id": 36,
+    "Infinitive": "reprendre",
+    "English": "to resume / to take back",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 36
+  },
+  {
+    "Id": 37,
+    "Infinitive": "mettre",
+    "English": "to put",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 37
+  },
+  {
+    "Id": 38,
+    "Infinitive": "permettre",
+    "English": "to allow",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 38
+  },
+  {
+    "Id": 39,
+    "Infinitive": "promettre",
+    "English": "to promise",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 39
+  },
+  {
+    "Id": 40,
+    "Infinitive": "admettre",
+    "English": "to admit",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 40
+  },
+  {
+    "Id": 41,
+    "Infinitive": "remettre",
+    "English": "to hand over / to postpone",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 41
+  },
+  {
+    "Id": 42,
+    "Infinitive": "soumettre",
+    "English": "to submit",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 42
+  },
+  {
+    "Id": 43,
+    "Infinitive": "battre",
+    "English": "to beat",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 43
+  },
+  {
+    "Id": 44,
+    "Infinitive": "combattre",
+    "English": "to fight",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 44
+  },
+  {
+    "Id": 45,
+    "Infinitive": "débattre",
+    "English": "to debate",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 45
+  },
+  {
+    "Id": 46,
+    "Infinitive": "rendre",
+    "English": "to give back / to return",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 46
+  },
+  {
+    "Id": 47,
+    "Infinitive": "vendre",
+    "English": "to sell",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 47
+  },
+  {
+    "Id": 48,
+    "Infinitive": "attendre",
+    "English": "to wait",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 48
+  },
+  {
+    "Id": 49,
+    "Infinitive": "entendre",
+    "English": "to hear",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 49
+  },
+  {
+    "Id": 50,
+    "Infinitive": "descendre",
+    "English": "to go down",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 50
+  },
+  {
+    "Id": 51,
+    "Infinitive": "répondre",
+    "English": "to answer",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 51
+  },
+  {
+    "Id": 52,
+    "Infinitive": "perdre",
+    "English": "to lose",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 52
+  },
+  {
+    "Id": 53,
+    "Infinitive": "tendre",
+    "English": "to stretch / to tend",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 53
+  },
+  {
+    "Id": 54,
+    "Infinitive": "prétendre",
+    "English": "to claim",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 54
+  },
+  {
+    "Id": 55,
+    "Infinitive": "étendre",
+    "English": "to extend",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 55
+  },
+  {
+    "Id": 56,
+    "Infinitive": "confondre",
+    "English": "to confuse",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 56
+  },
+  {
+    "Id": 57,
+    "Infinitive": "fondre",
+    "English": "to melt",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 57
+  },
+  {
+    "Id": 58,
+    "Infinitive": "pendre",
+    "English": "to hang",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 58
+  },
+  {
+    "Id": 59,
+    "Infinitive": "suspendre",
+    "English": "to suspend",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 59
+  },
+  {
+    "Id": 60,
+    "Infinitive": "défendre",
+    "English": "to defend / to forbid",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 60
+  },
+  {
+    "Id": 61,
+    "Infinitive": "dormir",
+    "English": "to sleep",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 61
+  },
+  {
+    "Id": 62,
+    "Infinitive": "sortir",
+    "English": "to go out",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 62
+  },
+  {
+    "Id": 63,
+    "Infinitive": "partir",
+    "English": "to leave",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 63
+  },
+  {
+    "Id": 64,
+    "Infinitive": "sentir",
+    "English": "to feel / to smell",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 64
+  },
+  {
+    "Id": 65,
+    "Infinitive": "mentir",
+    "English": "to lie",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 65
+  },
+  {
+    "Id": 66,
+    "Infinitive": "servir",
+    "English": "to serve",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 66
+  },
+  {
+    "Id": 67,
+    "Infinitive": "courir",
+    "English": "to run",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 67
+  },
+  {
+    "Id": 68,
+    "Infinitive": "mourir",
+    "English": "to die",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 68
+  },
+  {
+    "Id": 69,
+    "Infinitive": "ouvrir",
+    "English": "to open",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 69
+  },
+  {
+    "Id": 70,
+    "Infinitive": "offrir",
+    "English": "to offer",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 70
+  },
+  {
+    "Id": 71,
+    "Infinitive": "souffrir",
+    "English": "to suffer",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 71
+  },
+  {
+    "Id": 72,
+    "Infinitive": "couvrir",
+    "English": "to cover",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 72
+  },
+  {
+    "Id": 73,
+    "Infinitive": "découvrir",
+    "English": "to discover",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 73
+  },
+  {
+    "Id": 74,
+    "Infinitive": "cueillir",
+    "English": "to pick / to gather",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 74
+  },
+  {
+    "Id": 75,
+    "Infinitive": "accueillir",
+    "English": "to welcome",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 75
+  },
+  {
+    "Id": 76,
+    "Infinitive": "finir",
+    "English": "to finish",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 76
+  },
+  {
+    "Id": 77,
+    "Infinitive": "choisir",
+    "English": "to choose",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 77
+  },
+  {
+    "Id": 78,
+    "Infinitive": "réussir",
+    "English": "to succeed",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 78
+  },
+  {
+    "Id": 79,
+    "Infinitive": "réfléchir",
+    "English": "to think / to reflect",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 79
+  },
+  {
+    "Id": 80,
+    "Infinitive": "remplir",
+    "English": "to fill",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 80
+  },
+  {
+    "Id": 81,
+    "Infinitive": "grandir",
+    "English": "to grow up",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 81
+  },
+  {
+    "Id": 82,
+    "Infinitive": "grossir",
+    "English": "to gain weight",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 82
+  },
+  {
+    "Id": 83,
+    "Infinitive": "maigrir",
+    "English": "to lose weight",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 83
+  },
+  {
+    "Id": 84,
+    "Infinitive": "vieillir",
+    "English": "to grow old",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 84
+  },
+  {
+    "Id": 85,
+    "Infinitive": "rougir",
+    "English": "to blush",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 85
+  },
+  {
+    "Id": 86,
+    "Infinitive": "pâlir",
+    "English": "to turn pale",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 86
+  },
+  {
+    "Id": 87,
+    "Infinitive": "guérir",
+    "English": "to heal",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 87
+  },
+  {
+    "Id": 88,
+    "Infinitive": "punir",
+    "English": "to punish",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 88
+  },
+  {
+    "Id": 89,
+    "Infinitive": "obéir",
+    "English": "to obey",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 89
+  },
+  {
+    "Id": 90,
+    "Infinitive": "désobéir",
+    "English": "to disobey",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 90
+  },
+  {
+    "Id": 91,
+    "Infinitive": "bâtir",
+    "English": "to build",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 91
+  },
+  {
+    "Id": 92,
+    "Infinitive": "nourrir",
+    "English": "to feed",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 92
+  },
+  {
+    "Id": 93,
+    "Infinitive": "avertir",
+    "English": "to warn",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 93
+  },
+  {
+    "Id": 94,
+    "Infinitive": "établir",
+    "English": "to establish",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 94
+  },
+  {
+    "Id": 95,
+    "Infinitive": "agir",
+    "English": "to act",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 95
+  },
+  {
+    "Id": 96,
+    "Infinitive": "réagir",
+    "English": "to react",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 96
+  },
+  {
+    "Id": 97,
+    "Infinitive": "accomplir",
+    "English": "to accomplish",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 97
+  },
+  {
+    "Id": 98,
+    "Infinitive": "saisir",
+    "English": "to seize / to grasp",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 98
+  },
+  {
+    "Id": 99,
+    "Infinitive": "fournir",
+    "English": "to provide",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 99
+  },
+  {
+    "Id": 100,
+    "Infinitive": "envahir",
+    "English": "to invade",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 100
+  },
+  {
+    "Id": 101,
+    "Infinitive": "franchir",
+    "English": "to cross / to get through",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 101
+  },
+  {
+    "Id": 102,
+    "Infinitive": "investir",
+    "English": "to invest",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 102
+  },
+  {
+    "Id": 103,
+    "Infinitive": "ralentir",
+    "English": "to slow down",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 103
+  },
+  {
+    "Id": 104,
+    "Infinitive": "élargir",
+    "English": "to widen / to broaden",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 104
+  },
+  {
+    "Id": 105,
+    "Infinitive": "approfondir",
+    "English": "to deepen",
+    "Group": "2",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 105
+  },
+  {
+    "Id": 106,
+    "Infinitive": "écrire",
+    "English": "to write",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 106
+  },
+  {
+    "Id": 107,
+    "Infinitive": "décrire",
+    "English": "to describe",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 107
+  },
+  {
+    "Id": 108,
+    "Infinitive": "inscrire",
+    "English": "to register / to write down",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 108
+  },
+  {
+    "Id": 109,
+    "Infinitive": "prescrire",
+    "English": "to prescribe",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 109
+  },
+  {
+    "Id": 110,
+    "Infinitive": "lire",
+    "English": "to read",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 110
+  },
+  {
+    "Id": 111,
+    "Infinitive": "élire",
+    "English": "to elect",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 111
+  },
+  {
+    "Id": 112,
+    "Infinitive": "relire",
+    "English": "to reread",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 112
+  },
+  {
+    "Id": 113,
+    "Infinitive": "redire",
+    "English": "to say again",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 113
+  },
+  {
+    "Id": 114,
+    "Infinitive": "interdire",
+    "English": "to forbid",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 114
+  },
+  {
+    "Id": 115,
+    "Infinitive": "contredire",
+    "English": "to contradict",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 115
+  },
+  {
+    "Id": 116,
+    "Infinitive": "suffire",
+    "English": "to be enough",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 116
+  },
+  {
+    "Id": 117,
+    "Infinitive": "plaindre",
+    "English": "to pity",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 117
+  },
+  {
+    "Id": 118,
+    "Infinitive": "se plaindre",
+    "English": "to complain",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 118
+  },
+  {
+    "Id": 119,
+    "Infinitive": "taire",
+    "English": "to keep quiet about",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 119
+  },
+  {
+    "Id": 120,
+    "Infinitive": "se taire",
+    "English": "to be quiet",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 120
+  },
+  {
+    "Id": 121,
+    "Infinitive": "conduire",
+    "English": "to drive",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 121
+  },
+  {
+    "Id": 122,
+    "Infinitive": "construire",
+    "English": "to build / to construct",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 122
+  },
+  {
+    "Id": 123,
+    "Infinitive": "détruire",
+    "English": "to destroy",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 123
+  },
+  {
+    "Id": 124,
+    "Infinitive": "produire",
+    "English": "to produce",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 124
+  },
+  {
+    "Id": 125,
+    "Infinitive": "traduire",
+    "English": "to translate",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 125
+  },
+  {
+    "Id": 126,
+    "Infinitive": "réduire",
+    "English": "to reduce",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 126
+  },
+  {
+    "Id": 127,
+    "Infinitive": "introduire",
+    "English": "to introduce",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 127
+  },
+  {
+    "Id": 128,
+    "Infinitive": "séduire",
+    "English": "to seduce / to charm",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 128
+  },
+  {
+    "Id": 129,
+    "Infinitive": "cuire",
+    "English": "to cook",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 129
+  },
+  {
+    "Id": 130,
+    "Infinitive": "nuire",
+    "English": "to harm",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 130
+  },
+  {
+    "Id": 131,
+    "Infinitive": "peindre",
+    "English": "to paint",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 131
+  },
+  {
+    "Id": 132,
+    "Infinitive": "craindre",
+    "English": "to fear",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 132
+  },
+  {
+    "Id": 133,
+    "Infinitive": "joindre",
+    "English": "to join",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 133
+  },
+  {
+    "Id": 134,
+    "Infinitive": "rejoindre",
+    "English": "to rejoin / to meet up with",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 134
+  },
+  {
+    "Id": 135,
+    "Infinitive": "atteindre",
+    "English": "to reach",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 135
+  },
+  {
+    "Id": 136,
+    "Infinitive": "éteindre",
+    "English": "to turn off / to extinguish",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 136
+  },
+  {
+    "Id": 137,
+    "Infinitive": "vaincre",
+    "English": "to defeat",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 137
+  },
+  {
+    "Id": 138,
+    "Infinitive": "convaincre",
+    "English": "to convince",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 138
+  },
+  {
+    "Id": 139,
+    "Infinitive": "résoudre",
+    "English": "to resolve",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 139
+  },
+  {
+    "Id": 140,
+    "Infinitive": "dissoudre",
+    "English": "to dissolve",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 140
+  },
+  {
+    "Id": 141,
+    "Infinitive": "coudre",
+    "English": "to sew",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 141
+  },
+  {
+    "Id": 142,
+    "Infinitive": "moudre",
+    "English": "to grind",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 142
+  },
+  {
+    "Id": 143,
+    "Infinitive": "vivre",
+    "English": "to live",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 143
+  },
+  {
+    "Id": 144,
+    "Infinitive": "survivre",
+    "English": "to survive",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 144
+  },
+  {
+    "Id": 145,
+    "Infinitive": "suivre",
+    "English": "to follow",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 145
+  },
+  {
+    "Id": 146,
+    "Infinitive": "poursuivre",
+    "English": "to pursue",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 146
+  },
+  {
+    "Id": 147,
+    "Infinitive": "boire",
+    "English": "to drink",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 147
+  },
+  {
+    "Id": 148,
+    "Infinitive": "rire",
+    "English": "to laugh",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 148
+  },
+  {
+    "Id": 149,
+    "Infinitive": "sourire",
+    "English": "to smile",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 149
+  },
+  {
+    "Id": 150,
+    "Infinitive": "exclure",
+    "English": "to exclude",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 150
+  },
+  {
+    "Id": 151,
+    "Infinitive": "inclure",
+    "English": "to include",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 151
+  },
+  {
+    "Id": 152,
+    "Infinitive": "conclure",
+    "English": "to conclude",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 152
+  },
+  {
+    "Id": 153,
+    "Infinitive": "recevoir",
+    "English": "to receive",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 153
+  },
+  {
+    "Id": 154,
+    "Infinitive": "apercevoir",
+    "English": "to notice",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 154
+  },
+  {
+    "Id": 155,
+    "Infinitive": "s'apercevoir",
+    "English": "to realize",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 155
+  },
+  {
+    "Id": 156,
+    "Infinitive": "concevoir",
+    "English": "to conceive / to design",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 156
+  },
+  {
+    "Id": 157,
+    "Infinitive": "décevoir",
+    "English": "to disappoint",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 157
+  },
+  {
+    "Id": 158,
+    "Infinitive": "percevoir",
+    "English": "to perceive",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 158
+  },
+  {
+    "Id": 159,
+    "Infinitive": "revoir",
+    "English": "to see again",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 159
+  },
+  {
+    "Id": 160,
+    "Infinitive": "prévoir",
+    "English": "to foresee / to plan",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 160
+  },
+  {
+    "Id": 161,
+    "Infinitive": "s'asseoir",
+    "English": "to sit down",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 161
+  },
+  {
+    "Id": 162,
+    "Infinitive": "pleuvoir",
+    "English": "to rain",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 162
+  },
+  {
+    "Id": 163,
+    "Infinitive": "envoyer",
+    "English": "to send",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 163
+  },
+  {
+    "Id": 164,
+    "Infinitive": "renvoyer",
+    "English": "to send back / to fire",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 164
+  },
+  {
+    "Id": 165,
+    "Infinitive": "se lever",
+    "English": "to get up",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 165
+  },
+  {
+    "Id": 166,
+    "Infinitive": "se coucher",
+    "English": "to go to bed",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 166
+  },
+  {
+    "Id": 167,
+    "Infinitive": "s'habiller",
+    "English": "to get dressed",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 167
+  },
+  {
+    "Id": 168,
+    "Infinitive": "se laver",
+    "English": "to wash oneself",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 168
+  },
+  {
+    "Id": 169,
+    "Infinitive": "se réveiller",
+    "English": "to wake up",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 169
+  },
+  {
+    "Id": 170,
+    "Infinitive": "se dépêcher",
+    "English": "to hurry",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 170
+  },
+  {
+    "Id": 171,
+    "Infinitive": "s'amuser",
+    "English": "to have fun",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 171
+  },
+  {
+    "Id": 172,
+    "Infinitive": "s'intéresser",
+    "English": "to be interested",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 172
+  },
+  {
+    "Id": 173,
+    "Infinitive": "s'occuper",
+    "English": "to take care of",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 173
+  },
+  {
+    "Id": 174,
+    "Infinitive": "s'inquiéter",
+    "English": "to worry",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 174
+  },
+  {
+    "Id": 175,
+    "Infinitive": "se souvenir",
+    "English": "to remember",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 175
+  },
+  {
+    "Id": 176,
+    "Infinitive": "se promener",
+    "English": "to go for a walk",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 176
+  },
+  {
+    "Id": 177,
+    "Infinitive": "se reposer",
+    "English": "to rest",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 177
+  },
+  {
+    "Id": 178,
+    "Infinitive": "se marier",
+    "English": "to get married",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 178
+  },
+  {
+    "Id": 179,
+    "Infinitive": "se rappeler",
+    "English": "to recall",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 179
+  },
+  {
+    "Id": 180,
+    "Infinitive": "se sentir",
+    "English": "to feel",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 180
+  },
+  {
+    "Id": 181,
+    "Infinitive": "se demander",
+    "English": "to wonder",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 181
+  },
+  {
+    "Id": 182,
+    "Infinitive": "se rendre compte",
+    "English": "to realize",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 182
+  },
+  {
+    "Id": 183,
+    "Infinitive": "se fâcher",
+    "English": "to get angry",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 183
+  },
+  {
+    "Id": 184,
+    "Infinitive": "se calmer",
+    "English": "to calm down",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 184
+  },
+  {
+    "Id": 185,
+    "Infinitive": "se moquer",
+    "English": "to make fun of",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 185
+  },
+  {
+    "Id": 186,
+    "Infinitive": "se battre",
+    "English": "to fight",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 186
+  },
+  {
+    "Id": 187,
+    "Infinitive": "s'ennuyer",
+    "English": "to get bored",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 187
+  },
+  {
+    "Id": 188,
+    "Infinitive": "se souhaiter",
+    "English": "to wish each other",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 188
+  },
+  {
+    "Id": 189,
+    "Infinitive": "se plaire",
+    "English": "to enjoy / to like each other",
+    "Group": "3",
+    "IsIrregular": true,
+    "IsReflexive": true,
+    "FrequencyRank": 189
+  },
+  {
+    "Id": 190,
+    "Infinitive": "se tromper",
+    "English": "to be mistaken",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 190
+  },
+  {
+    "Id": 191,
+    "Infinitive": "se passer",
+    "English": "to happen",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 191
+  },
+  {
+    "Id": 192,
+    "Infinitive": "se trouver",
+    "English": "to be located",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 192
+  },
+  {
+    "Id": 193,
+    "Infinitive": "se déplacer",
+    "English": "to move around / to travel",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 193
+  },
+  {
+    "Id": 194,
+    "Infinitive": "se comporter",
+    "English": "to behave",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": true,
+    "FrequencyRank": 194
+  },
+  {
+    "Id": 195,
+    "Infinitive": "parler",
+    "English": "to speak",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 195
+  },
+  {
+    "Id": 196,
+    "Infinitive": "aimer",
+    "English": "to like / to love",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 196
+  },
+  {
+    "Id": 197,
+    "Infinitive": "donner",
+    "English": "to give",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 197
+  },
+  {
+    "Id": 198,
+    "Infinitive": "trouver",
+    "English": "to find",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 198
+  },
+  {
+    "Id": 199,
+    "Infinitive": "demander",
+    "English": "to ask",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 199
+  },
+  {
+    "Id": 200,
+    "Infinitive": "rester",
+    "English": "to stay",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 200
+  },
+  {
+    "Id": 201,
+    "Infinitive": "penser",
+    "English": "to think",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 201
+  },
+  {
+    "Id": 202,
+    "Infinitive": "arriver",
+    "English": "to arrive",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 202
+  },
+  {
+    "Id": 203,
+    "Infinitive": "passer",
+    "English": "to pass / to spend time",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 203
+  },
+  {
+    "Id": 204,
+    "Infinitive": "regarder",
+    "English": "to watch / to look at",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 204
+  },
+  {
+    "Id": 205,
+    "Infinitive": "laisser",
+    "English": "to let / to leave",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 205
+  },
+  {
+    "Id": 206,
+    "Infinitive": "sembler",
+    "English": "to seem",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 206
+  },
+  {
+    "Id": 207,
+    "Infinitive": "chercher",
+    "English": "to look for",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 207
+  },
+  {
+    "Id": 208,
+    "Infinitive": "appeler",
+    "English": "to call",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 208
+  },
+  {
+    "Id": 209,
+    "Infinitive": "jouer",
+    "English": "to play",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 209
+  },
+  {
+    "Id": 210,
+    "Infinitive": "montrer",
+    "English": "to show",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 210
+  },
+  {
+    "Id": 211,
+    "Infinitive": "continuer",
+    "English": "to continue",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 211
+  },
+  {
+    "Id": 212,
+    "Infinitive": "travailler",
+    "English": "to work",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 212
+  },
+  {
+    "Id": 213,
+    "Infinitive": "tirer",
+    "English": "to pull",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 213
+  },
+  {
+    "Id": 214,
+    "Infinitive": "essayer",
+    "English": "to try",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 214
+  },
+  {
+    "Id": 215,
+    "Infinitive": "rappeler",
+    "English": "to call back",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 215
+  },
+  {
+    "Id": 216,
+    "Infinitive": "décider",
+    "English": "to decide",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 216
+  },
+  {
+    "Id": 217,
+    "Infinitive": "manger",
+    "English": "to eat",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 217
+  },
+  {
+    "Id": 218,
+    "Infinitive": "écouter",
+    "English": "to listen",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 218
+  },
+  {
+    "Id": 219,
+    "Infinitive": "marcher",
+    "English": "to walk",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 219
+  },
+  {
+    "Id": 220,
+    "Infinitive": "porter",
+    "English": "to carry / to wear",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 220
+  },
+  {
+    "Id": 221,
+    "Infinitive": "tomber",
+    "English": "to fall",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 221
+  },
+  {
+    "Id": 222,
+    "Infinitive": "entrer",
+    "English": "to enter",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 222
+  },
+  {
+    "Id": 223,
+    "Infinitive": "considérer",
+    "English": "to consider",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 223
+  },
+  {
+    "Id": 224,
+    "Infinitive": "préparer",
+    "English": "to prepare",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 224
+  },
+  {
+    "Id": 225,
+    "Infinitive": "présenter",
+    "English": "to present / to introduce",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 225
+  },
+  {
+    "Id": 226,
+    "Infinitive": "exister",
+    "English": "to exist",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 226
+  },
+  {
+    "Id": 227,
+    "Infinitive": "ajouter",
+    "English": "to add",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 227
+  },
+  {
+    "Id": 228,
+    "Infinitive": "poser",
+    "English": "to place / to ask (a question)",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 228
+  },
+  {
+    "Id": 229,
+    "Infinitive": "refuser",
+    "English": "to refuse",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 229
+  },
+  {
+    "Id": 230,
+    "Infinitive": "accepter",
+    "English": "to accept",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 230
+  },
+  {
+    "Id": 231,
+    "Infinitive": "oublier",
+    "English": "to forget",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 231
+  },
+  {
+    "Id": 232,
+    "Infinitive": "gagner",
+    "English": "to win / to earn",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 232
+  },
+  {
+    "Id": 233,
+    "Infinitive": "quitter",
+    "English": "to leave",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 233
+  },
+  {
+    "Id": 234,
+    "Infinitive": "expliquer",
+    "English": "to explain",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 234
+  },
+  {
+    "Id": 235,
+    "Infinitive": "remarquer",
+    "English": "to notice",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 235
+  },
+  {
+    "Id": 236,
+    "Infinitive": "imaginer",
+    "English": "to imagine",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 236
+  },
+  {
+    "Id": 237,
+    "Infinitive": "retourner",
+    "English": "to return / to go back",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 237
+  },
+  {
+    "Id": 238,
+    "Infinitive": "apporter",
+    "English": "to bring",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 238
+  },
+  {
+    "Id": 239,
+    "Infinitive": "acheter",
+    "English": "to buy",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 239
+  },
+  {
+    "Id": 240,
+    "Infinitive": "payer",
+    "English": "to pay",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 240
+  },
+  {
+    "Id": 241,
+    "Infinitive": "jeter",
+    "English": "to throw",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 241
+  },
+  {
+    "Id": 242,
+    "Infinitive": "lever",
+    "English": "to lift / to raise",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 242
+  },
+  {
+    "Id": 243,
+    "Infinitive": "préférer",
+    "English": "to prefer",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 243
+  },
+  {
+    "Id": 244,
+    "Infinitive": "espérer",
+    "English": "to hope",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 244
+  },
+  {
+    "Id": 245,
+    "Infinitive": "répéter",
+    "English": "to repeat",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 245
+  },
+  {
+    "Id": 246,
+    "Infinitive": "protéger",
+    "English": "to protect",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 246
+  },
+  {
+    "Id": 247,
+    "Infinitive": "changer",
+    "English": "to change",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 247
+  },
+  {
+    "Id": 248,
+    "Infinitive": "commencer",
+    "English": "to begin",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 248
+  },
+  {
+    "Id": 249,
+    "Infinitive": "avancer",
+    "English": "to advance / to move forward",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 249
+  },
+  {
+    "Id": 250,
+    "Infinitive": "placer",
+    "English": "to place",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 250
+  },
+  {
+    "Id": 251,
+    "Infinitive": "lancer",
+    "English": "to throw / to launch",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 251
+  },
+  {
+    "Id": 252,
+    "Infinitive": "forcer",
+    "English": "to force",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 252
+  },
+  {
+    "Id": 253,
+    "Infinitive": "remplacer",
+    "English": "to replace",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 253
+  },
+  {
+    "Id": 254,
+    "Infinitive": "tourner",
+    "English": "to turn",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 254
+  },
+  {
+    "Id": 255,
+    "Infinitive": "couper",
+    "English": "to cut",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 255
+  },
+  {
+    "Id": 256,
+    "Infinitive": "sauver",
+    "English": "to save",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 256
+  },
+  {
+    "Id": 257,
+    "Infinitive": "prêter",
+    "English": "to lend",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 257
+  },
+  {
+    "Id": 258,
+    "Infinitive": "emprunter",
+    "English": "to borrow",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 258
+  },
+  {
+    "Id": 259,
+    "Infinitive": "échanger",
+    "English": "to exchange",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 259
+  },
+  {
+    "Id": 260,
+    "Infinitive": "partager",
+    "English": "to share",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 260
+  },
+  {
+    "Id": 261,
+    "Infinitive": "nager",
+    "English": "to swim",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 261
+  },
+  {
+    "Id": 262,
+    "Infinitive": "voyager",
+    "English": "to travel",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 262
+  },
+  {
+    "Id": 263,
+    "Infinitive": "danser",
+    "English": "to dance",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 263
+  },
+  {
+    "Id": 264,
+    "Infinitive": "chanter",
+    "English": "to sing",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 264
+  },
+  {
+    "Id": 265,
+    "Infinitive": "dessiner",
+    "English": "to draw",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 265
+  },
+  {
+    "Id": 266,
+    "Infinitive": "cuisiner",
+    "English": "to cook",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 266
+  },
+  {
+    "Id": 267,
+    "Infinitive": "nettoyer",
+    "English": "to clean",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 267
+  },
+  {
+    "Id": 268,
+    "Infinitive": "essuyer",
+    "English": "to wipe",
+    "Group": "1",
+    "IsIrregular": true,
+    "IsReflexive": false,
+    "FrequencyRank": 268
+  },
+  {
+    "Id": 269,
+    "Infinitive": "réparer",
+    "English": "to repair",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 269
+  },
+  {
+    "Id": 270,
+    "Infinitive": "fabriquer",
+    "English": "to make / to manufacture",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 270
+  },
+  {
+    "Id": 271,
+    "Infinitive": "créer",
+    "English": "to create",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 271
+  },
+  {
+    "Id": 272,
+    "Infinitive": "inventer",
+    "English": "to invent",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 272
+  },
+  {
+    "Id": 273,
+    "Infinitive": "développer",
+    "English": "to develop",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 273
+  },
+  {
+    "Id": 274,
+    "Infinitive": "augmenter",
+    "English": "to increase",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 274
+  },
+  {
+    "Id": 275,
+    "Infinitive": "diminuer",
+    "English": "to decrease",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 275
+  },
+  {
+    "Id": 276,
+    "Infinitive": "baisser",
+    "English": "to lower",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 276
+  },
+  {
+    "Id": 277,
+    "Infinitive": "monter",
+    "English": "to go up",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 277
+  },
+  {
+    "Id": 278,
+    "Infinitive": "reculer",
+    "English": "to move back",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 278
+  },
+  {
+    "Id": 279,
+    "Infinitive": "entourer",
+    "English": "to surround",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 279
+  },
+  {
+    "Id": 280,
+    "Infinitive": "traverser",
+    "English": "to cross",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 280
+  },
+  {
+    "Id": 281,
+    "Infinitive": "dépasser",
+    "English": "to exceed / to pass",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 281
+  },
+  {
+    "Id": 282,
+    "Infinitive": "éviter",
+    "English": "to avoid",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 282
+  },
+  {
+    "Id": 283,
+    "Infinitive": "empêcher",
+    "English": "to prevent",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 283
+  },
+  {
+    "Id": 284,
+    "Infinitive": "autoriser",
+    "English": "to authorize",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 284
+  },
+  {
+    "Id": 285,
+    "Infinitive": "obliger",
+    "English": "to oblige",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 285
+  },
+  {
+    "Id": 286,
+    "Infinitive": "encourager",
+    "English": "to encourage",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 286
+  },
+  {
+    "Id": 287,
+    "Infinitive": "féliciter",
+    "English": "to congratulate",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 287
+  },
+  {
+    "Id": 288,
+    "Infinitive": "remercier",
+    "English": "to thank",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 288
+  },
+  {
+    "Id": 289,
+    "Infinitive": "mériter",
+    "English": "to deserve",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 289
+  },
+  {
+    "Id": 290,
+    "Infinitive": "échouer",
+    "English": "to fail",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 290
+  },
+  {
+    "Id": 291,
+    "Infinitive": "tenter",
+    "English": "to attempt",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 291
+  },
+  {
+    "Id": 292,
+    "Infinitive": "oser",
+    "English": "to dare",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 292
+  },
+  {
+    "Id": 293,
+    "Infinitive": "hésiter",
+    "English": "to hesitate",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 293
+  },
+  {
+    "Id": 294,
+    "Infinitive": "douter",
+    "English": "to doubt",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 294
+  },
+  {
+    "Id": 295,
+    "Infinitive": "deviner",
+    "English": "to guess",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 295
+  },
+  {
+    "Id": 296,
+    "Infinitive": "supposer",
+    "English": "to suppose",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 296
+  },
+  {
+    "Id": 297,
+    "Infinitive": "rêver",
+    "English": "to dream",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 297
+  },
+  {
+    "Id": 298,
+    "Infinitive": "souhaiter",
+    "English": "to wish",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 298
+  },
+  {
+    "Id": 299,
+    "Infinitive": "désirer",
+    "English": "to desire",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 299
+  },
+  {
+    "Id": 300,
+    "Infinitive": "détester",
+    "English": "to hate",
+    "Group": "1",
+    "IsIrregular": false,
+    "IsReflexive": false,
+    "FrequencyRank": 300
+  }
+]
