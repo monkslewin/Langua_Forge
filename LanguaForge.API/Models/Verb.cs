@@ -15,4 +15,6 @@ public class Verb
     public bool IsReflexive { get; set; }
 
     public int FrequencyRank { get; set; }
+
+    public List<Conjugation> Conjugations { get; set; } = new();
 }
