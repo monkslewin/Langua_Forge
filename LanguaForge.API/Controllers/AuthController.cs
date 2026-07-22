@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using LanguaForge.API.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 
 namespace LanguaForge.API.Controllers;
@@ -12,18 +16,35 @@ public class AuthController : ControllerBase
 {
 
     private readonly UserManager<ApplicationUser> _userManager;
+    private readonly IConfiguration _configuration;
 
 
-    public AuthController(UserManager<ApplicationUser> userManager)
+    public AuthController(
+        UserManager<ApplicationUser> userManager,
+        IConfiguration configuration
+    )
     {
         _userManager = userManager;
+        _configuration = configuration;
     }
 
 
 
+    // POST: api/auth/register
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
+
+        var existingUser = await _userManager.FindByEmailAsync(request.Email);
+
+        if(existingUser != null)
+        {
+            return BadRequest(new
+            {
+                message = "Email already registered"
+            });
+        }
+
 
         var user = new ApplicationUser
         {
@@ -40,7 +61,7 @@ public class AuthController : ControllerBase
         );
 
 
-        if (!result.Succeeded)
+        if(!result.Succeeded)
         {
             return BadRequest(result.Errors);
         }
@@ -55,15 +76,23 @@ public class AuthController : ControllerBase
 
 
 
+
+    // POST: api/auth/login
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
-        var user = await _userManager.FindByEmailAsync(request.Email);
+
+        var user = await _userManager.FindByEmailAsync(
+            request.Email
+        );
 
 
         if(user == null)
         {
-            return Unauthorized();
+            return Unauthorized(new
+            {
+                message = "Invalid email or password"
+            });
         }
 
 
@@ -76,19 +105,120 @@ public class AuthController : ControllerBase
 
         if(!passwordCorrect)
         {
-            return Unauthorized();
+            return Unauthorized(new
+            {
+                message = "Invalid email or password"
+            });
         }
+
+
+
+        var token = CreateToken(user);
 
 
         return Ok(new
         {
             message = "Login successful",
-            user.Id,
-            user.Email
+
+            token,
+
+            user = new
+            {
+                user.Id,
+                user.Email,
+                user.FirstName,
+                user.LastName
+            }
         });
+
+    }
+
+
+
+
+
+    private string CreateToken(ApplicationUser user)
+    {
+
+        var claims = new[]
+        {
+
+            new Claim(
+                JwtRegisteredClaimNames.Sub,
+                user.Id
+            ),
+
+
+            new Claim(
+                JwtRegisteredClaimNames.Email,
+                user.Email!
+            ),
+
+
+            new Claim(
+                "firstName",
+                user.FirstName
+            ),
+
+
+            new Claim(
+                "lastName",
+                user.LastName
+            )
+
+        };
+
+
+
+        var key = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(
+                _configuration["Jwt:Key"]!
+            )
+        );
+
+
+
+        var credentials = new SigningCredentials(
+            key,
+            SecurityAlgorithms.HmacSha256
+        );
+
+
+
+        var token = new JwtSecurityToken(
+
+            issuer:
+                _configuration["Jwt:Issuer"],
+
+
+            audience:
+                _configuration["Jwt:Audience"],
+
+
+            claims: claims,
+
+
+            expires:
+                DateTime.UtcNow.AddHours(1),
+
+
+            signingCredentials:
+                credentials
+
+        );
+
+
+
+        return new JwtSecurityTokenHandler()
+            .WriteToken(token);
+
     }
 
 }
+
+
+
+
 
 public class RegisterRequest
 {
@@ -100,6 +230,9 @@ public class RegisterRequest
 
     public string Password { get; set; } = "";
 }
+
+
+
 
 public class LoginRequest
 {
