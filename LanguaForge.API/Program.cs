@@ -3,28 +3,33 @@ using LanguaForge.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Database
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(
-        builder.Configuration.GetConnectionString("DefaultConnection")
+        builder.Configuration
+        .GetConnectionString("DefaultConnection")
     )
 );
 
+
 builder.Services.AddControllers();
 
-// Swagger / OpenAPI
-builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Swagger endpoint
-if (app.Environment.IsDevelopment())
+
+using (var scope = app.Services.CreateScope())
 {
-    app.MapOpenApi();
+    var db = scope.ServiceProvider
+        .GetRequiredService<ApplicationDbContext>();
+
+    await DbSeeder.SeedAsync(db);
 }
 
-// app.UseHttpsRedirection();
+
+app.UseHttpsRedirection();
 
 app.MapControllers();
+
 
 app.Run();

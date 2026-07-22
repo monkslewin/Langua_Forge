@@ -1,0 +1,246 @@
+[
+  {
+    "VerbId": 1,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Singular",
+    "Form": "suis"
+  },
+  {
+    "VerbId": 1,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Singular",
+    "Form": "es"
+  },
+  {
+    "VerbId": 1,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Singular",
+    "Form": "est"
+  },
+  {
+    "VerbId": 1,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Plural",
+    "Form": "sommes"
+  },
+  {
+    "VerbId": 1,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Plural",
+    "Form": "êtes"
+  },
+  {
+    "VerbId": 1,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Plural",
+    "Form": "sont"
+  },
+
+  {
+    "VerbId": 2,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Singular",
+    "Form": "ai"
+  },
+  {
+    "VerbId": 2,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Singular",
+    "Form": "as"
+  },
+  {
+    "VerbId": 2,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Singular",
+    "Form": "a"
+  },
+  {
+    "VerbId": 2,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Plural",
+    "Form": "avons"
+  },
+  {
+    "VerbId": 2,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Plural",
+    "Form": "avez"
+  },
+  {
+    "VerbId": 2,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Plural",
+    "Form": "ont"
+  },
+
+  {
+    "VerbId": 3,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Singular",
+    "Form": "fais"
+  },
+  {
+    "VerbId": 3,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Singular",
+    "Form": "fais"
+  },
+  {
+    "VerbId": 3,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Singular",
+    "Form": "fait"
+  },
+  {
+    "VerbId": 3,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Plural",
+    "Form": "faisons"
+  },
+  {
+    "VerbId": 3,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Plural",
+    "Form": "faites"
+  },
+  {
+    "VerbId": 3,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Plural",
+    "Form": "font"
+  },
+
+  {
+    "VerbId": 4,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Singular",
+    "Form": "vais"
+  },
+  {
+    "VerbId": 4,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Singular",
+    "Form": "vas"
+  },
+  {
+    "VerbId": 4,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Singular",
+    "Form": "va"
+  },
+  {
+    "VerbId": 4,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Plural",
+    "Form": "allons"
+  },
+  {
+    "VerbId": 4,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Plural",
+    "Form": "allez"
+  },
+  {
+    "VerbId": 4,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Plural",
+    "Form": "vont"
+  },
+
+  {
+    "VerbId": 5,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Singular",
+    "Form": "peux"
+  },
+  {
+    "VerbId": 5,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Singular",
+    "Form": "peux"
+  },
+  {
+    "VerbId": 5,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Singular",
+    "Form": "peut"
+  },
+  {
+    "VerbId": 5,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "First",
+    "Number": "Plural",
+    "Form": "pouvons"
+  },
+  {
+    "VerbId": 5,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Second",
+    "Number": "Plural",
+    "Form": "pouvez"
+  },
+  {
+    "VerbId": 5,
+    "Tense": "Present",
+    "Mood": "Indicative",
+    "Person": "Third",
+    "Number": "Plural",
+    "Form": "peuvent"
+  }
+]
