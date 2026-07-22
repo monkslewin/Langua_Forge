@@ -1,15 +1,12 @@
+namespace LanguaForge.API.Data;
 using Microsoft.EntityFrameworkCore;
 using LanguaForge.API.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
-
-namespace LanguaForge.API.Data;
-
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
-
-    public ApplicationDbContext(
-        DbContextOptions<ApplicationDbContext> options
-    ) : base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
     {
 
     }
@@ -17,5 +14,4 @@ public class ApplicationDbContext : DbContext
     public DbSet<Verb> Verbs { get; set; }
 
     public DbSet<Conjugation> Conjugations { get; set; }
-
 }
