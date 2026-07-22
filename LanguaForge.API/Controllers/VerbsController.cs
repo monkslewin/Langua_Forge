@@ -1,6 +1,7 @@
 using LanguaForge.API.Data;
 using LanguaForge.API.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace LanguaForge.API.Controllers;
@@ -16,16 +17,16 @@ public class VerbsController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetAllVerbs() 
+    public async Task<IActionResult> GetAllVerbs() 
     {
-        var verbs = _context.Verbs.ToList();
+        var verbs = await _context.Verbs.ToListAsync();
         return Ok(verbs);
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetVerb(int id)    
+    public async Task<IActionResult> GetVerb(int id)    
     {
-        var verb = _context.Verbs.Find(id);
+        var verb = await _context.Verbs.FindAsync(id);
 
         if (verb == null) {
             return NotFound();
@@ -35,10 +36,10 @@ public class VerbsController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateVerb(Verb verb) 
+    public async Task<IActionResult> CreateVerb(Verb verb) 
     {
         _context.Verbs.Add(verb);
-        _context.SaveChanges();
+        await _context.SaveChangesAsync();
 
         return CreatedAtAction(
             nameof(GetVerb),
