@@ -1,0 +1,15 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #4338ca
+    );
+
+}

@@ -1,0 +1,31 @@
+@rendermode InteractiveServer
+
+<h1 class="greeting">
+    <Typewriter Builder="@typewriter" />
+</h1>
+
+@code {
+
+    private TypewriterBuilder typewriter =
+        new TypewriterBuilder(defaultCharacterPause: 50)
+            .TypeString("Welcome to LanguaForge")
+            .Pause(1500)
+            .DeleteAll()
+            .TypeString("Bienvenue sur LanguaForge")
+            .Pause(1500)
+            .DeleteAll()
+            .TypeString("Willkommen bei LanguaForge")
+            .Pause(1500)
+            .DeleteAll()
+            .TypeString("Bienvenido a LanguaForge")
+            .Pause(1500)
+            .DeleteAll()
+            .TypeString("ようこそ LanguaForge へ")
+            .Pause(1500)
+            .DeleteAll()
+            .TypeString("Mirë se vini në LanguaForge")
+            .Pause(1500)
+            .DeleteAll()
+            .Loop();
+
+}
