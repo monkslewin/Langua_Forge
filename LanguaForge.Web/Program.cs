@@ -3,6 +3,13 @@ using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpClient("API", client =>
+{
+    client.BaseAddress = new Uri(
+        builder.Configuration["ApiBaseUrl"]!
+    );
+});
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

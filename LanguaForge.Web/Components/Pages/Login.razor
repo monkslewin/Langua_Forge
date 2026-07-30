@@ -1,5 +1,11 @@
 @page "/"
 @layout AuthLayout
+@using LanguaForge.Web.Models
+@using MudBlazor
+@inject IHttpClientFactory HttpClientFactory
+@inject ISnackbar Snackbar
+@rendermode InteractiveServer
+@inject NavigationManager Navigation
 
 <div class="auth-card">
     <div class="auth-header">
@@ -7,15 +13,15 @@
         <p>Sign in to continue learning</p>
     </div>
 
-    <form>
+    <form @onsubmit="HandleLogin" @onsubmit:preventDefault>
         <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="Enter your email" />
+            <input @bind="loginModel.Email" type="email" placeholder="Enter your email" />
         </div>
 
         <div class="form-group">
             <label>Password</label>
-            <input type="password" placeholder="Enter your password" />
+            <input @bind="loginModel.Password" type="password" placeholder="Enter your password" />
         </div>
 
         <button class="auth-button" type="submit">
@@ -28,3 +34,29 @@
         <a href="/register">Create one</a>
     </div>
 </div>
+
+@code 
+{
+    private LoginModel loginModel = new();
+
+    private async Task HandleLogin() 
+    {
+
+        var client = HttpClientFactory.CreateClient("API");
+        var response = await client.PostAsJsonAsync(
+            "api/auth/login",
+            loginModel
+        );
+
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/register");
+        }
+        else
+        {
+            Snackbar.Add("Invalid email or password. Please try again.", Severity.Error);
+        }
+    }
+
+
+}
