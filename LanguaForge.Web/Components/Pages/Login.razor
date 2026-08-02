@@ -1,9 +1,7 @@
 @page "/"
 @layout AuthLayout
 @using LanguaForge.Web.Models
-@using MudBlazor
 @inject IHttpClientFactory HttpClientFactory
-@inject ISnackbar Snackbar
 @rendermode InteractiveServer
 @inject NavigationManager Navigation
 
@@ -24,8 +22,26 @@
             <input @bind="loginModel.Password" type="password" placeholder="Enter your password" />
         </div>
 
-        <button class="auth-button" type="submit">
-            Login
+        @if (errorMessage is not null)
+        {
+            <div class="auth-alert auth-alert-error">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" />
+                </svg>
+                @errorMessage
+            </div>
+        }
+
+        <button class="auth-button" type="submit" disabled="@isLoading">
+            @if (isLoading)
+            {
+                <span class="auth-spinner"></span>
+                <span>Signing in...</span>
+            }
+            else
+            {
+                <span>Login</span>
+            }
         </button>
     </form>
 
@@ -38,23 +54,35 @@
 @code 
 {
     private LoginModel loginModel = new();
+    private string? errorMessage;
+    private bool isLoading;
 
-    private async Task HandleLogin() 
+    private async Task HandleLogin()
     {
+        errorMessage = null;
+        isLoading = true;
 
-        var client = HttpClientFactory.CreateClient("API");
-        var response = await client.PostAsJsonAsync(
-            "api/auth/login",
-            loginModel
-        );
-
-        if (response.IsSuccessStatusCode)
+        try
         {
-            Navigation.NavigateTo("/register");
+            var client = HttpClientFactory.CreateClient("API");
+            var response = await client.PostAsJsonAsync("api/auth/login", loginModel);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/dashboard");
+            }
+            else
+            {
+                errorMessage = "Invalid email or password. Please try again.";
+            }
         }
-        else
+        catch
         {
-            Snackbar.Add("Invalid email or password. Please try again.", Severity.Error);
+            errorMessage = "Unable to reach the server. Please try again later.";
+        }
+        finally
+        {
+            isLoading = false;
         }
     }
 

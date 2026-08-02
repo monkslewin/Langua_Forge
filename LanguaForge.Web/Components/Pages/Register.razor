@@ -3,9 +3,7 @@
 @rendermode InteractiveServer
 @inject IHttpClientFactory HttpClientFactory
 @inject NavigationManager Navigation
-@inject ISnackbar Snackbar
 @using LanguaForge.Web.Models
-@using MudBlazor
 
 <div class="auth-card">
     <div class="auth-header">
@@ -13,7 +11,7 @@
         <p>Start your language journey</p>
     </div>
 
-    <form @onsubmit="HandleRegister">
+    <form @onsubmit="HandleRegister" @onsubmit:preventDefault>
         <div class="form-group">
             <label>First name</label>
             <input @bind="registerModel.FirstName"
@@ -44,12 +42,31 @@
 
         <div class="form-group">
             <label>Confirm password</label>
-            <input type="password"
+            <input @bind="confirmPassword"
+                   type="password"
                    placeholder="Confirm your password" />
         </div>
 
-        <button class="auth-button" type="submit">
-            Register
+        @if (errorMessage is not null)
+        {
+            <div class="auth-alert auth-alert-error">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" />
+                </svg>
+                @errorMessage
+            </div>
+        }
+
+        <button class="auth-button" type="submit" disabled="@isLoading">
+            @if (isLoading)
+            {
+                <span class="auth-spinner"></span>
+                <span>Creating account...</span>
+            }
+            else
+            {
+                <span>Register</span>
+            }
         </button>
     </form>
 
@@ -63,25 +80,43 @@
 @code {
 
     private RegisterModel registerModel = new();
-
+    private string confirmPassword = string.Empty;
+    private string? errorMessage;
+    private bool isLoading;
 
     private async Task HandleRegister()
     {
-        var client = HttpClientFactory.CreateClient("API");
+        errorMessage = null;
 
-        var response = await client.PostAsJsonAsync(
-            "api/auth/register",
-            registerModel
-        );
-
-
-        if (response.IsSuccessStatusCode)
+        if (registerModel.Password != confirmPassword)
         {
-            Navigation.NavigateTo("/");
+            errorMessage = "Passwords do not match.";
+            return;
         }
-        else
+
+        isLoading = true;
+
+        try
         {
-            Snackbar.Add("Registration failed. Please check your details and try again.", Severity.Error);
+            var client = HttpClientFactory.CreateClient("API");
+            var response = await client.PostAsJsonAsync("api/auth/register", registerModel);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Navigation.NavigateTo("/");
+            }
+            else
+            {
+                errorMessage = "Registration failed. Please check your details and try again.";
+            }
+        }
+        catch
+        {
+            errorMessage = "Unable to reach the server. Please try again later.";
+        }
+        finally
+        {
+            isLoading = false;
         }
     }
 
