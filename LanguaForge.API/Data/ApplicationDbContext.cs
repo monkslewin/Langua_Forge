@@ -16,4 +16,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Conjugation> Conjugations { get; set; }
 
     public DbSet<JournalEntry> JournalEntries => Set<JournalEntry>();
+
+    public DbSet<Prompt> Prompts => Set<Prompt>();
 }

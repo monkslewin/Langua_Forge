@@ -1,0 +1,125 @@
+.home-container {
+    width: 80%;
+    max-width: 850px;
+    margin: 40px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.welcome-section {
+    background: #112D4E;
+    color: #F9F7F7;
+
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.welcome-section h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+.welcome-section p {
+    margin: 0;
+    color: #DBE2EF;
+}
+
+
+.prompt-card,
+.response-card {
+    background: white;
+    padding: 24px;
+
+    border-radius: 16px;
+    border: 1px solid #DBE2EF;
+}
+
+.prompt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.prompt-label,
+.difficulty {
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.prompt-label {
+    background: #3F72AF;
+    color: white;
+}
+
+.difficulty {
+    background: #DBE2EF;
+    color: #112D4E;
+}
+
+.prompt-card h2 {
+    margin: 0 0 8px;
+    color: #112D4E;
+}
+
+.prompt-card p {
+    margin: 0;
+    color: #52606D;
+}
+
+
+.response-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.response-card label {
+    font-weight: 600;
+    color: #112D4E;
+}
+
+textarea {
+    min-height: 160px;
+    padding: 14px;
+
+    resize: vertical;
+
+    border-radius: 10px;
+    border: 1px solid #CBD5E1;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3F72AF;
+}
+
+button {
+    align-self: flex-end;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #3F72AF;
+    color: white;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #112D4E;
+}
