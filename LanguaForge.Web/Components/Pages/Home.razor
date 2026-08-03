@@ -1,15 +1,18 @@
 @page "/home"
 @layout AppLayout
+@inject IHttpClientFactory HttpClientFactory
+@using System.Net.Http.Json
+@rendermode InteractiveServer
 
 <div class="home-container">
     <section class="welcome-section">
-        <h1>Bonjour, Finn 👋</h1>
+        <h1>Bonjour, Finn</h1>
         <p>Ready to sharpen your language skills today? Complete your daily challenge.</p>
     </section>
 
     <section class="prompt-card">
-        <h2>Describe your day in French</h2>
-        <span class="difficulty">Intermediate</span>
+        <h2>@PromptText</h2>
+        <span class="difficulty">@PromptLevel</span>
     </section>
 
     <section class="response-card">
@@ -22,5 +25,36 @@
 </div>
 
 @code {
-    
+    private string PromptText { get; set; } = "Loading...";
+    private string PromptLevel { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = HttpClientFactory.CreateClient("API");
+        var prompt = await client.GetFromJsonAsync<PromptResponse>("api/prompts/random");
+
+        if (prompt is not null)
+        {
+            PromptText = prompt.Text;
+            PromptLevel = prompt.Level.ToString();
+
+            switch (PromptLevel) 
+            {
+                case "0":
+                    PromptLevel = "Beginner";
+                    break;
+                case "1":
+                    PromptLevel = "Intermediate";
+                    break;
+                case "2":
+                    PromptLevel = "Advanced";
+                    break;
+                default:
+                    break;
+            }
+           
+        }
+    }
+
+    private record PromptResponse(int Id, string Text, int Level);
 }

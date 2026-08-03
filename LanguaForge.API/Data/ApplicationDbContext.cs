@@ -18,4 +18,13 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<JournalEntry> JournalEntries => Set<JournalEntry>();
 
     public DbSet<Prompt> Prompts => Set<Prompt>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Prompt>()
+            .Property(p => p.Level)
+            .HasConversion<string>();
+    }
 }

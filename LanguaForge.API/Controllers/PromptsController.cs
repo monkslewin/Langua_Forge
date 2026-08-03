@@ -8,7 +8,6 @@ namespace LanguaForge.API.Controllers;
 
 [ApiController]
 [Route("api/prompts")]
-[Authorize]
 public class PromptsController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
@@ -42,7 +41,6 @@ public class PromptsController : ControllerBase
         return Ok(prompt);
     }
 
-    // GET /api/prompts/level/{level}
     [HttpGet("level/{level}")]
     public async Task<ActionResult<IEnumerable<Prompt>>> GetByLevel(PromptLevel level)
     {
