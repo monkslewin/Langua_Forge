@@ -3,10 +3,12 @@
 @inject IHttpClientFactory HttpClientFactory
 @using System.Net.Http.Json
 @rendermode InteractiveServer
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthStateProvider
 
 <div class="home-container">
     <section class="welcome-section">
-        <h1>Bonjour, Finn</h1>
+        <h1>Bonjour, @FirstName</h1>
         <p>Ready to sharpen your language skills today? Complete your daily challenge.</p>
     </section>
 
@@ -28,33 +30,41 @@
     private string PromptText { get; set; } = "Loading...";
     private string PromptLevel { get; set; } = "";
 
+    private string FirstName { get; set; } = "User";
+
+
     protected override async Task OnInitializedAsync()
     {
+        // Get current logged-in user
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var currentUser = authState.User;
+
+        if (currentUser.Identity?.IsAuthenticated == true)
+        {
+            FirstName = currentUser.FindFirst("FirstName")?.Value 
+                        ?? currentUser.Identity.Name 
+                        ?? "User";
+        }
+
+        // Get daily prompt
         var client = HttpClientFactory.CreateClient("API");
+
         var prompt = await client.GetFromJsonAsync<PromptResponse>("api/prompts/random");
 
         if (prompt is not null)
         {
             PromptText = prompt.Text;
-            PromptLevel = prompt.Level.ToString();
 
-            switch (PromptLevel) 
+            PromptLevel = prompt.Level switch
             {
-                case "0":
-                    PromptLevel = "Beginner";
-                    break;
-                case "1":
-                    PromptLevel = "Intermediate";
-                    break;
-                case "2":
-                    PromptLevel = "Advanced";
-                    break;
-                default:
-                    break;
-            }
-           
+                0 => "Beginner",
+                1 => "Intermediate",
+                2 => "Advanced",
+                _ => "Unknown"
+            };
         }
     }
+
 
     private record PromptResponse(int Id, string Text, int Level);
 }

@@ -4,6 +4,8 @@
 @inject IHttpClientFactory HttpClientFactory
 @rendermode InteractiveServer
 @inject NavigationManager Navigation
+@inject LanguaForge.Web.Services.AuthStateService AuthStateService
+@using System.Net.Http.Json
 
 <div class="auth-card">
     <div class="auth-header">
@@ -53,6 +55,8 @@
 
 @code 
 {
+    private record LoginResponse(string Token);
+
     private LoginModel loginModel = new();
     private string? errorMessage;
     private bool isLoading;
@@ -69,6 +73,10 @@
 
             if (response.IsSuccessStatusCode)
             {
+                var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
+                if (result is not null)
+                    AuthStateService.SetUserFromToken(result.Token);
+
                 Navigation.NavigateTo("/home");
             }
             else

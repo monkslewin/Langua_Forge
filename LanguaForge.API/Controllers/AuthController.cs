@@ -132,7 +132,7 @@ public class AuthController : ControllerBase
             ),
 
             new Claim(
-                "firstName",
+                "FirstName",
                 user.FirstName
             ),
 

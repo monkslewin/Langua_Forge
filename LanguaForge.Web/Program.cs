@@ -1,7 +1,13 @@
 using LanguaForge.Web.Components;
+using LanguaForge.Web.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddAuthorizationCore();
+builder.Services.AddScoped<AuthStateService>();
+builder.Services.AddScoped<AuthenticationStateProvider, JwtAuthenticationStateProvider>();
 
 builder.Services.AddHttpClient("API", client =>
 {
