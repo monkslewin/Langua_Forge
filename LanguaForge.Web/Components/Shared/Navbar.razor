@@ -1,3 +1,24 @@
-<div class="navbar">
+@rendermode InteractiveServer
 
-</div>
+<nav class="navbar">
+    <a class="navbar-logo" href="/home">LanguaForge</a>
+
+    <div class="navbar-right">
+        <ul class="navbar-links">
+            <li><NavLink href="/home" Match="NavLinkMatch.All">Home</NavLink></li>
+            <li><NavLink href="/journal">Journal</NavLink></li>
+            <li><NavLink href="/profile">Profile</NavLink></li>
+        </ul>
+
+        <button class="navbar-logout" @onclick="HandleLogout">Logout</button>
+    </div>
+</nav>
+
+@code {
+    private async Task HandleLogout()
+    {
+        // TODO: wire this up to your real sign-out logic, e.g.:
+        // await AuthService.LogoutAsync();
+        // NavigationManager.NavigateTo("/login", forceLoad: true);
+    }
+}
