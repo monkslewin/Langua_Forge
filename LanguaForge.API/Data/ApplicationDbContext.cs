@@ -14,4 +14,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Verb> Verbs { get; set; }
 
     public DbSet<Conjugation> Conjugations { get; set; }
+
+    public DbSet<JournalEntry> JournalEntries => Set<JournalEntry>();
 }
