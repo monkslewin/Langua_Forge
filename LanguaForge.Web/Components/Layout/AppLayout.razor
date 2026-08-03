@@ -1,23 +1,9 @@
 @inherits LayoutComponentBase
 @using LanguaForge.Web.Components.Shared
-@inject LanguaForge.Web.Services.AuthStateService AuthStateService
-@inject IJSRuntime JS
+
 
 <Navbar />
 
 <main class="app-main">
     @Body
 </main>
-
-@code {
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (!firstRender) return;
-
-        if (AuthStateService.CurrentUser.Identity?.IsAuthenticated == true) return;
-
-        var token = await JS.InvokeAsync<string?>("localStorage.getItem", "auth_token");
-        if (!string.IsNullOrEmpty(token))
-            AuthStateService.SetUserFromToken(token);
-    }
-}
