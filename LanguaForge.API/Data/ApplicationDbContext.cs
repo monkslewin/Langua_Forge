@@ -18,6 +18,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<JournalEntry> JournalEntries => Set<JournalEntry>();
 
     public DbSet<Prompt> Prompts => Set<Prompt>();
+    public DbSet<DailyPrompt> DailyPrompts { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
