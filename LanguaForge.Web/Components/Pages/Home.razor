@@ -3,8 +3,6 @@
 @inject LanguaForge.Web.Services.ApiClient ApiClient
 @using System.Net.Http.Json
 @rendermode InteractiveServer
-@using Microsoft.AspNetCore.Components.Authorization
-@inject AuthenticationStateProvider AuthStateProvider
 @inject LanguaForge.Web.Services.TokenService TokenService
 @inject IJSRuntime JS
 
@@ -40,7 +38,6 @@
         if (!RendererInfo.IsInteractive)
             return;
 
-        // Restore token from localStorage if lost due to a page reload
         if (string.IsNullOrEmpty(TokenService.GetToken()))
         {
             var stored = await JS.InvokeAsync<string?>("localStorage.getItem", "jwt_token");
@@ -48,18 +45,8 @@
                 TokenService.SetToken(stored);
         }
 
-        // Get current logged-in user
-        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
-        var currentUser = authState.User;
+        FirstName = TokenService.GetFirstName() ?? "User";
 
-        if (currentUser.Identity?.IsAuthenticated == true)
-        {
-            FirstName = currentUser.FindFirst("FirstName")?.Value 
-                        ?? currentUser.Identity.Name 
-                        ?? "User";
-        }
-
-        // Get daily prompt AND current user
         var client = ApiClient.Create();
 
         var prompt = await client.GetFromJsonAsync<PromptResponse>("api/prompts/today");
