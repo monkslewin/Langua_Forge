@@ -1,9 +1,12 @@
 @page "/"
 @layout AuthLayout
 @using LanguaForge.Web.Models
+@using LanguaForge.Web.Services
 @inject IHttpClientFactory HttpClientFactory
 @rendermode InteractiveServer
 @inject NavigationManager Navigation
+@inject TokenService TokenService
+@inject IJSRuntime JS
 
 <div class="auth-card">
     <div class="auth-header">
@@ -58,33 +61,43 @@
     private bool isLoading;
 
     private async Task HandleLogin()
+{
+    errorMessage = null;
+    isLoading = true;
+
+    try
     {
-        errorMessage = null;
-        isLoading = true;
+        var client = HttpClientFactory.CreateClient("API");
 
-        try
-        {
-            var client = HttpClientFactory.CreateClient("API");
-            var response = await client.PostAsJsonAsync("api/auth/login", loginModel);
+        var response = await client.PostAsJsonAsync(
+            "api/auth/login",
+            loginModel
+        );
 
-            if (response.IsSuccessStatusCode)
-            {
-                Navigation.NavigateTo("/home");
-            }
-            else
-            {
-                errorMessage = "Invalid email or password. Please try again.";
-            }
-        }
-        catch
+
+        if (response.IsSuccessStatusCode)
         {
-            errorMessage = "Unable to reach the server. Please try again later.";
+            var result = await response.Content
+                .ReadFromJsonAsync<LoginResponse>();
+
+            if (result != null)
+            {
+                TokenService.SetToken(result.Token);
+                await JS.InvokeVoidAsync("localStorage.setItem", "jwt_token", result.Token);
+            }
+
+            Navigation.NavigateTo("/home");
         }
-        finally
+        else
         {
-            isLoading = false;
+            errorMessage = "Invalid email or password.";
         }
     }
+    finally
+    {
+        isLoading = false;
+    }
+}
 
 
 }

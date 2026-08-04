@@ -1,5 +1,6 @@
 using LanguaForge.Web.Components;
 using MudBlazor.Services;
+using LanguaForge.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,9 @@ builder.Services.AddHttpClient("API", client =>
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddScoped<TokenService>();
+builder.Services.AddScoped<ApiClient>();
 
 builder.Services.AddMudServices();
 

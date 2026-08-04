@@ -1,10 +1,12 @@
 @page "/home"
 @layout AppLayout
-@inject IHttpClientFactory HttpClientFactory
+@inject LanguaForge.Web.Services.ApiClient ApiClient
 @using System.Net.Http.Json
 @rendermode InteractiveServer
 @using Microsoft.AspNetCore.Components.Authorization
 @inject AuthenticationStateProvider AuthStateProvider
+@inject LanguaForge.Web.Services.TokenService TokenService
+@inject IJSRuntime JS
 
 <div class="home-container">
     <section class="welcome-section">
@@ -35,6 +37,17 @@
 
     protected override async Task OnInitializedAsync()
     {
+        if (!RendererInfo.IsInteractive)
+            return;
+
+        // Restore token from localStorage if lost due to a page reload
+        if (string.IsNullOrEmpty(TokenService.GetToken()))
+        {
+            var stored = await JS.InvokeAsync<string?>("localStorage.getItem", "jwt_token");
+            if (!string.IsNullOrEmpty(stored))
+                TokenService.SetToken(stored);
+        }
+
         // Get current logged-in user
         var authState = await AuthStateProvider.GetAuthenticationStateAsync();
         var currentUser = authState.User;
@@ -46,11 +59,11 @@
                         ?? "User";
         }
 
-        // Get daily prompt
-        var client = HttpClientFactory.CreateClient("API");
+        // Get daily prompt AND current user
+        var client = ApiClient.Create();
 
-        var prompt = await client.GetFromJsonAsync<PromptResponse>("api/prompts/random");
-
+        var prompt = await client.GetFromJsonAsync<PromptResponse>("api/prompts/today");
+        
         if (prompt is not null)
         {
             PromptText = prompt.Text;
@@ -64,7 +77,6 @@
             };
         }
     }
-
 
     private record PromptResponse(int Id, string Text, int Level);
 }
