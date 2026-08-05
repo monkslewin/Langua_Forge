@@ -20,17 +20,24 @@
     <section class="response-card">
         <label>Your response</label>
 
-        <textarea placeholder="Écrivez votre réponse ici..."></textarea>
+        <textarea @bind="ResponseText" placeholder="Écrivez votre réponse ici..."></textarea>
 
-        <button>Submit Response</button>
+        @if (SubmitMessage is not null)
+        {
+            <p>@SubmitMessage</p>
+        }
+
+        <button @onclick="HandleSubmit" disabled="@IsSubmitting">Submit Response</button>
     </section>
 </div>
 
 @code {
     private string PromptText { get; set; } = "Loading...";
     private string PromptLevel { get; set; } = "";
-
     private string FirstName { get; set; } = "User";
+    private string ResponseText { get; set; } = "";
+    private bool IsSubmitting { get; set; } = false;
+    private string? SubmitMessage { get; set; }
 
 
     protected override async Task OnInitializedAsync()
@@ -62,6 +69,35 @@
                 2 => "Advanced",
                 _ => "Unknown"
             };
+        }
+    }
+
+    private async Task HandleSubmit()
+    {
+        if (string.IsNullOrWhiteSpace(ResponseText)) return;
+
+        IsSubmitting = true;
+        SubmitMessage = null;
+
+        try
+        {
+            var client = ApiClient.Create();
+            var payload = new { Prompt = PromptText, Response = ResponseText };
+            var result = await client.PostAsJsonAsync("api/journal", payload);
+
+            if (result.IsSuccessStatusCode)
+            {
+                SubmitMessage = "Response saved!";
+                ResponseText = "";
+            }
+            else
+            {
+                SubmitMessage = "Something went wrong. Please try again.";
+            }
+        }
+        finally
+        {
+            IsSubmitting = false;
         }
     }
 

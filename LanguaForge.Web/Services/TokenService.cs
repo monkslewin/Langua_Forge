@@ -23,7 +23,7 @@ public class TokenService
         _firstName = null;
     }
 
-    // JWT payload is Base64url-encoded JSON — no library needed
+    // JWT payload is Base64url-encoded JSON 
     private static string? ParseClaim(string token, string claimType)
     {
         var parts = token.Split('.');

@@ -1,3 +1,8 @@
+@inject LanguaForge.Web.Services.TokenService TokenService
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+@rendermode InteractiveServer
+
 <nav class="navbar">
     <a class="navbar-logo" href="/home">LanguaForge</a>
 
@@ -8,13 +13,24 @@
             <li><NavLink href="/profile">Profile</NavLink></li>
         </ul>
 
-        <button class="navbar-logout" @onclick="HandleLogout">Logout</button>
+        <button class="navbar-logout" @onclick="HandleLogout">
+            Logout
+        </button>
     </div>
 </nav>
 
 @code {
     private async Task HandleLogout()
     {
-        // TODO: wire this up to your real sign-out logic 
+        // Clear token stored in memory
+        TokenService.ClearToken();
+
+        // Remove token stored in the browser
+        await JS.InvokeVoidAsync(
+            "localStorage.removeItem",
+            "jwt_token"
+        );
+
+        Navigation.NavigateTo("/", forceLoad: true);
     }
 }
