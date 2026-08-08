@@ -1,8 +1,74 @@
 @page "/journal"
 @layout AppLayout
 @inject LanguaForge.Web.Services.ApiClient ApiClient
+@inject LanguaForge.Web.Services.TokenService TokenService
+@inject IJSRuntime JS
 @using System.Net.Http.Json
 @rendermode InteractiveServer
 
-<h1>Previous Journal Entries</h1>
+<div class="journal-container">
+    <div class="journal-header">
+        <h1>Journal</h1>
+        <p>Your previous responses</p>
+    </div>
+
+    @if (IsLoading)
+    {
+        <p class="journal-status">Loading entries...</p>
+    }
+    else if (Entries.Count == 0)
+    {
+        <p class="journal-status">No entries yet. Submit a response on the home page to get started.</p>
+    }
+    else
+    {
+        <div class="entry-list">
+            @foreach (var entry in Entries)
+            {
+                <div class="entry-card @(ExpandedId == entry.Id ? "expanded" : "")"
+                     @onclick="() => ToggleEntry(entry.Id)">
+                    <div class="entry-card-header">
+                        <p class="entry-prompt">@entry.Prompt</p>
+                        <span class="entry-date">@entry.CreatedAt.ToString("MMM d, yyyy")</span>
+                    </div>
+                    @if (ExpandedId == entry.Id)
+                    {
+                        <div class="entry-response">
+                            <p>@entry.Response</p>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private List<JournalEntry> Entries { get; set; } = [];
+    private bool IsLoading { get; set; } = true;
+    private int? ExpandedId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!RendererInfo.IsInteractive)
+            return;
+
+        if (string.IsNullOrEmpty(TokenService.GetToken()))
+        {
+            var stored = await JS.InvokeAsync<string?>("localStorage.getItem", "jwt_token");
+            if (!string.IsNullOrEmpty(stored))
+                TokenService.SetToken(stored);
+        }
+
+        var client = ApiClient.Create();
+        var result = await client.GetFromJsonAsync<List<JournalEntry>>("api/journal");
+        Entries = result ?? [];
+        IsLoading = false;
+    }
+
+    private void ToggleEntry(int id) =>
+        ExpandedId = ExpandedId == id ? null : id;
+
+    private record JournalEntry(int Id, string Prompt, string Response, DateTime CreatedAt);
+}
 
