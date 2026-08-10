@@ -9,7 +9,7 @@ on:
 
 env:
   DOTNET_VERSION: '10.x'
-  PROJECT_PATH: 'LanguaForge.API/Langua_Forge.API.csproj'
+  PROJECT_PATH: 'LanguaForge.API/LanguaForge.API.csproj'
   AZURE_WEBAPP_NAME: 'languaforge-api-finn-monks-lewin'
 
 jobs:
