@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="BlazorTypewriter" Version="1.1.0" />
     <PackageReference Include="MudBlazor" Version="9.7.0" />
+    <PackageReference Include="OpenAI" Version="2.12.0" />
   </ItemGroup>
 
 </Project>
