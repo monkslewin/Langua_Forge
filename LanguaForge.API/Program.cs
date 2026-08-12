@@ -10,11 +10,21 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 
-// Database
+var databaseProvider = builder.Configuration["DatabaseProvider"];
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(
-        builder.Configuration.GetConnectionString("DefaultConnection"))
-);
+{
+    if (databaseProvider == "SqlServer")
+    {
+        options.UseSqlServer(
+            builder.Configuration.GetConnectionString("DefaultConnection"));
+    }
+    else
+    {
+        options.UseSqlite(
+            builder.Configuration.GetConnectionString("DefaultConnection"));
+    }
+});
 
 
 // Identity
